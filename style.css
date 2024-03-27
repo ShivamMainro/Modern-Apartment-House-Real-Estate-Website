@@ -1,0 +1,837 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,body{
+    width: 100vw;
+    height: 100%;
+}
+
+.page1 {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    padding-inline: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    height: 5vh;
+    padding-top: 1rem;
+}
+
+nav .logo h1{
+    margin-block: auto;
+    color: white;
+    -webkit-text-stroke: 1px blue;
+    font-size: calc(1rem + 1.3vw);
+    text-transform: uppercase;
+}
+
+nav .nav-items{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1vw;
+    gap: 5rem;
+    color: white;
+}
+
+nav .menu{
+    display: none;
+}
+
+.main{
+    padding-left: 4vw;
+    display: flex;
+}
+
+.main .pg1-head{
+    width: 40vw;
+    padding-top: 5vh;
+}
+
+.main .pg1-head h1{
+    font-size: 4vw;
+}
+
+.main .pg1-cont{
+    position: relative;
+    z-index: 1;
+}
+
+.main .house{
+    width: 60vw;
+    overflow: hidden;
+}
+
+.main .house img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 60vw;
+}
+
+.main .top{
+    color: darkblue;
+}
+.main .btm{
+    color: blue;
+}
+
+.main .house .overlay{
+    position: absolute;
+    transform: translate(0, -3vh);
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 255, 0.518);
+    mask: url(/image/bg.png) center/contain no-repeat;
+    width: 60vw;
+    height: 100vh;
+    mask-size: 100% 94%;
+    z-index: 1;
+}
+
+.main .pg1-cont button{
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    color: blue;
+    border: 2px solid blue;
+    background-color: transparent;
+    margin-top: 5vh;
+}
+
+.find {
+    position: absolute;
+    width: 90%;
+    margin-top: 16vw;
+    height: 4.5vw;
+    padding-block: 1rem;
+    background-color: white;
+    margin-inline: 6vw;
+    display: flex;
+    justify-content: space-around;
+    filter: drop-shadow(0px 10px 53px rgba(10, 10, 10, 0.130));
+    /* position: relative; */
+   
+    z-index: 10;
+}
+
+.find input {
+    height: 2.5vw;
+    width: 40%;
+    padding: 1rem;
+}
+
+.find button {
+    height: 2.5rem;
+    width: 15%;
+    background-color: orange;
+}
+
+.big-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.page2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.page2-img {
+    margin-right: 5rem;
+}
+
+.boo {
+    padding: 2rem;
+    width: 22rem;
+}
+
+.boo h2 {
+    font-family: "Poppins", sans-serif;
+    border-left: 0.5rem solid darkblue;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+}
+
+.boo p {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.boo button {
+    width: 6rem;
+    border-radius: 1.2rem;
+    border: 0.1rem solid blue;
+    height: 2rem;
+    background-color: transparent;
+    color: blue;
+    transition: .9s;
+}
+button:hover{
+    background-color: blue;
+    color: white;
+    border-color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.sqr {
+    padding: 4.1rem;
+    align-self: flex-end;
+}
+
+.sqr div {
+    width: 3rem;
+    height: 3rem;
+}
+
+.sqr .db {
+    background-color: darkblue;
+    transform: translate(-1rem, 1rem);
+}
+
+.sqr .b {
+    background-color: blue;
+}
+
+.page3-heading {
+    margin-top: -6rem;
+    width: 20rem;
+    margin-inline: auto;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.page3-heading h2 {
+    padding: 0.2rem;
+    border-left: 0.5rem solid darkblue;
+}
+
+.layout-grid {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30vw , 1fr));
+    grid-auto-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+.benten {
+    text-align: center;
+}
+
+.benten button {
+    width: 6rem;
+    border-radius: 1.2rem;
+    border: 0.1rem solid blue;
+    height: 2rem;
+    background-color: transparent;
+    color: blue;
+}
+
+.page4 .head{
+    text-align: center;
+    margin-block: 3rem;
+} 
+
+.page4 .head .pg4-head{
+    width: 10rem;
+    margin-inline: auto;
+    border-left: 0.5em solid darkblue;
+
+}
+
+.page4 .boxes{
+    display: flex;
+    width: 70%;
+    margin-inline: auto;
+    gap: 1rem;
+}
+
+.page4 .boxi{
+    padding: 1rem;
+    text-align: center;
+}
+.boxi .mesh{ 
+    background-color: #e084d2;
+}
+.page4 .boxi .title{
+    background-color: #65deda;
+    font-size: 1.2vw;
+    font-weight: bold;
+
+}
+.num{
+    padding-top: 0.7rem;
+    font-size: 1.5rem;
+}
+.num-txt{
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem;
+}
+
+.page4 .boxi .cont-4 h3{
+    font-size: 1.5rem;
+}
+
+.page4 .boxi .cont-4{
+    padding-top: 3rem;
+    color: white;
+}
+
+.page4 .boxi .cont-4 p{
+    width: 34%;
+    margin-inline: auto;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+
+.btn-pg4 button{
+    margin-top: 1rem;
+    padding: 0.5em 1.4em;
+    border-radius: 20px;
+    border: none;
+}
+
+.cb{
+    background-color: blue;
+}
+.cy{
+    background-color: #f9bc16;
+}
+
+.pe{
+    background-color: #f9bc16;
+    color: white;
+}
+.bu{
+    background-color: darkblue;
+    color: white;
+}
+
+.page5 {
+    display: flex;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.page5-img {
+    display: flex;
+    gap: 1rem;
+}
+
+.red-sofa img {
+    width: 22rem;
+    height: auto;
+    margin-top: 2.5rem;
+}
+
+.wb img {
+    object-fit: cover;
+    width: auto;
+    height: 20rem;
+}
+
+.page5-heading {
+    font-family: serif;
+    margin-left: 8rem;
+    width: 25rem;
+    line-height: 1.4;
+}
+
+.page5-heading h2 {
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    border-left: 0.5rem solid darkblue;
+    padding: 0.2em;
+}
+
+.page5-heading button {
+    margin-top: 2rem;
+    padding: 0.8em 2em;
+    border-radius: 20px;
+    border: 2px solid darkblue;
+    background-color: transparent;
+    color: darkblue;
+
+}
+button{
+    border: none;
+}
+
+.page6{
+    background-color: darkblue;
+    margin-block: 3rem;
+    color: white;
+}
+
+.page6 .pg6-title{
+    text-align: center;
+    width: 11rem;
+    margin-inline: auto;
+    padding-top: 1rem;
+}
+
+.page6 .pg6-title h2{
+    border-left: 5px solid white;
+}
+
+.page6 .page6-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2rem;
+    gap: 10vw;
+}
+
+.page6 .page6-cont .page6-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page6 .page6-cont .page6-logo img{
+    width: 2.5rem;
+}
+
+.page6 .page6-cont .page6-logo h4{
+    font-size: 1.8rem;
+}
+.page6 .page6-cont .page6-logo p{
+    font-weight: 600;
+}
+
+.pg6-btn{
+    margin-left: 48%;
+    padding-bottom: 1rem;
+}
+
+.pg6-btn button{
+    padding: 0.8em 1.2em;
+    border-radius: 20px;
+}
+
+.page7 .pg7-bbox{
+    margin-inline: auto;
+    width: 80vw;
+}
+
+.page7-heading{
+    margin-left: 40%;
+    padding-block: 1rem;
+}
+
+.page7-heading h2{
+    border-left: 0.5rem solid darkblue;
+    padding-left: 0.3rem;
+}
+
+.page7-box{
+    display: flex;
+    gap: 2rem;
+    padding-inline: 1rem;
+    align-items: center;
+    border: 0.1rem solid darkblue;
+}
+
+.page7-btn button{
+    padding: 1em 1.2eml;
+    border-radius: 50%;
+    font-weight: 900;
+    background-color: darkblue;
+    color: #ffffff;
+}
+
+.page7 .page7-collection{
+    margin-block: 4rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.page7 .page7-collection .page7-img{
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page7 .page7-collection .page7-img img{
+    position: relative;
+    z-index: 1;
+    width: 5.3rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.page7-overlay{
+    position: relative;
+    top: 0;
+    left: 1rem;
+    background-color: darkblue;
+    width: 2rem;
+    height: 9rem;
+    z-index: 0;
+}
+
+.page8 {
+    background-color: darkblue;
+    color: white;
+    margin-top: 1rem;
+    width: 100vw;
+}
+
+.page8-up{
+    display: flex;
+    gap: 1rem;
+    width: 100vw;
+}
+
+.page8-up .page8-img img{
+    width: 60vw;
+}
+
+.page8-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.page8-input input{
+    height: calc(0.6rem + 2vw);
+    width: 25vw;
+}
+
+.message{
+    height: 7rem;
+}
+
+.page8-c2 {
+    width: 9rem;
+}
+
+.page8-between {
+    display: flex;
+    margin-inline: 2rem;
+    justify-content: space-around;
+    line-height: 1.5;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+
+}
+
+.page8-c1 {
+    margin-inline: 3rem;
+    line-height: 2.2;
+}
+
+.page8-down {
+    border-top: 1px solid white;
+    text-align: center;
+    width: 30rem;
+    margin-inline: auto;
+}
+
+.page8-down p {
+    padding-block: 1rem;
+}
+
+.page8-input button {
+    border-radius: 20px;
+    width: 9rem;
+    background-color: rgb(255, 128, 0);
+    padding: 0.5rem 3rem;
+}
+
+.message {
+    padding: 2rem;
+}
+
+.page8-c1 p img {
+    margin-right: 1rem;
+}
+
+.page8-c3 {
+    width: 12.5rem;
+    padding-inline: 2rem;
+}
+
+.page8-heading {
+    border-left: 0.5rem solid darkblue;
+    padding: 0.2rem;
+    width: 12rem;
+    margin-inline: auto;
+    margin-block: 3rem;
+
+}
+
+.page8-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.page8-c4 {
+    line-height: 2;
+    width: 16rem;
+}
+
+.page8-c4 button {
+    padding: 0.5em 1.5em;
+    background-color: orange;
+    border: none;
+    margin-block: 0.8rem;
+
+}
+
+.page8-c4 input {
+    padding: 0.5rem 1.5rem;
+    width: 20vw;
+}
+
+@media (max-width:500px){
+    .page1{
+        width: 100vw;
+        height: fit-content;
+    }
+    .page1 nav .nav-items h2{
+        display: none;
+    }
+    .page1 nav .nav-items .menu{
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+    .main .pg1-head h1{
+        font-size: 7.5vw;
+    }
+    .main .pg1-cont p{
+        display: none;
+    }
+    .main .pg1-cont button{
+        font-size: 2.6vw;
+        margin-top: 1vh;
+    }
+    .main .house img{
+        width: 70vw;
+        height: 33vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        opacity: 0.8;
+    }
+
+    .main .house .overlay{
+        position: absolute;
+        transform: translate(0, 0vh);
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 255, 0.518);
+        mask: url(/image/bg.png) center/contain no-repeat;
+        width: 70vw;
+        height: 33vh;
+        mask-size: 100% 100%;
+        z-index: 1;
+    }
+    .find{
+        margin-inline: auto;
+        position: relative;
+        top: -9vw;
+        height: 13vw;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        margin-bottom: 1rem;
+    }
+    .find input{
+        padding: 1em 0.4em;
+    }
+    .find button{
+        height: 8.5vw;
+        padding: 0em 0.2em;
+    }
+
+    /* page-2 */
+
+    .page2{
+        margin-top: -3rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 80vh;
+        margin-inline: auto;
+    }
+    .big-2 .boo{
+        grid-row: 1/2;
+    }
+    .big-2 .page2-img{
+        grid-row: 2/3;
+        margin-inline: auto;
+    }
+    .big-2 .page2-img img{
+        width: 90vw;
+    }
+    .big-2 .sqr{
+       display: none;
+    }
+
+    /* page-3 */
+
+    .page3{
+        margin-top: 10rem;
+        height: fit-content;
+        margin-inline: auto;
+    }
+    .page3 .page3-heading{
+        margin-top: 0rem;
+        line-height: 1.4;
+    }
+    .page3 .page3-heading h2{
+        text-align: center;
+        width: 61%;
+        margin-left: 25%;
+    }
+
+    /* page-4 */
+
+    .page4 .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .page4 .boxes .num{
+        font-size: 1.5rem;
+    }
+    .page4 .boxes .num-txt{
+        font-size: 1rem; 
+    }
+    .page4 .boxes .cont-4 h3{
+        font-size: 1.5rem;
+    }
+
+    /* page-5 */
+
+    .page5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page5 .page5-heading{
+        width: 300px;
+        margin-left: 1rem;
+    }
+    .page5 .page5-heading button{
+        margin-left: 25%;
+    }
+
+    .red-sofa{
+        display: none;
+    }
+
+    /* page-6 */
+
+
+    /* page7 */
+
+   .page7-heading{
+    margin-left:2rem ;
+   }
+   .page7-btn{
+    margin-left: -0.5rem;
+   }
+    .page7 .page7-collection{
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+   .page7-content h4{
+    margin-block: 0.5rem;
+   }
+   .page7-content p{
+    line-height: 1.3;
+   }
+
+    /* page-8 */
+
+    .page8{
+        margin-inline: auto;
+    }
+
+    .pg8-cont{
+        width: 90vw;
+    }
+
+    .page8-img img{
+        width: 100rem;
+    }
+
+    .page8 .page8-up{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page8-input{
+        text-align: center;
+        align-items: center;
+    }
+    .page8-input input{
+        width: 90%;
+        height: 5vh;
+        padding: 0.3em 0.6em;
+    }
+    .page8-between{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    .page8-c1{
+        text-align: center;
+        width: 80vw;
+    }
+    .page8-c4{
+        text-align: center;
+    }
+    .page8-c4 input{
+        width: 7rem;
+        padding: 0.6em 0em;
+    }
+    .page8-down{
+        width: 80vw;
+        margin-left: 10%;
+    }
+}
+/* @media (500 < width <= 1500px){
+    .main .house .overlay{
+        display: none;
+    }
+} */
